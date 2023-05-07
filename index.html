@@ -4,11 +4,83 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TradingMadeEasy - Your Path to Financial Success Starts Here</title>
-    <script src="https://unpkg.com/lightweight-charts/dist/lightweight-charts.standalone.production.js"></script>
     <style>
         /* Add your custom CSS styles here */
-        /* Same as before */
+        /* Same as before, but with added styles for sections */
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #4CAF50;
+            padding: 20px;
+        }
+
+        header h1, header h2 {
+            color: white;
+            margin: 0;
+        }
+
+        nav ul {
+            background-color: #333;
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            overflow: hidden;
+        }
+
+        nav ul li {
+            display: inline;
+        }
+
+        nav ul li a {
+            display: inline-block;
+            color: white;
+            padding: 10px;
+            text-decoration: none;
+        }
+
+        nav ul li a:hover {
+            background-color: #111;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        section {
+            margin-bottom: 20px;
+            display: none;
+        }
+
+        section img {
+            width: 100%;
+            max-width: 300px;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
     </style>
+    <script>
+        function showSection(id) {
+            // Hide all sections
+            const sections = document.querySelectorAll("main section");
+            sections.forEach(section => {
+                section.style.display = "none";
+            });
+
+            // Show the section with the given id
+            document.getElementById(id).style.display = "block";
+        }
+    </script>
 </head>
 <body>
     <header>
@@ -17,57 +89,27 @@
     </header>
     <nav>
         <ul>
-            <li><a href="#investing-basics">Investing Basics</a></li>
-            <li><a href="#personal-finance">Personal Finance</a></li>
-            <li><a href="#global-market-overview">Global Market Overview</a></li>
-            <li><a href="#tools-and-resources">Tools and Resources</a></li>
-            <li><a href="#community">Community</a></li>
-            <li><a href="#courses-and-guides">Courses and Guides</a></li>
-            <li><a href="#about-us">About Us</a></li>
-            <li><a href="#blog">Blog</a></li>
+            <li><a href="#" onclick="showSection('investing-basics')">Investing Basics</a></li>
+            <li><a href="#" onclick="showSection('personal-finance')">Personal Finance</a></li>
+            <li><a href="#" onclick="showSection('global-market-overview')">Global Market Overview</a></li>
+            <li><a href="#" onclick="showSection('tools-and-resources')">Tools and Resources</a></li>
+            <li><a href="#" onclick="showSection('community')">Community</a></li>
+            <li><a href="#" onclick="showSection('courses-and-guides')">Courses and Guides</a></li>
+            <li><a href="#" onclick="showSection('about-us')">About Us</a></li>
+            <li><a href="#" onclick="showSection('blog')">Blog</a></li>
         </ul>
     </nav>
     <main>
-        <!-- Investing Basics -->
+        <!-- Add the hypothetical content sections as before -->
+
+        <!-- Example: Investing Basics -->
         <section id="investing-basics">
-            <h3>Investing Basics</h3>
-            <p>Learn the fundamentals of investing, including types of investments, risk and return, and strategies for long-term growth.</p>
-            <ul>
-                <li>What is Investing?</li>
-                <li>Types of Investments</li>
-                <li>Understanding Risk and Return</li>
-                <li>Long-term vs. Short-term Investing</li>
-            </ul>
+            <!-- Add your content and visuals here -->
         </section>
+        
+        <!-- Add the other sections as needed -->
+    </main>
+    <footer
 
-        <!-- Personal Finance -->
-        <section id="personal-finance">
-            <h3>Personal Finance</h3>
-            <p>Discover the essentials of personal finance and how to manage your money effectively to achieve your financial goals.</p>
-            <ul>
-                <li>Budgeting and Saving</li>
-                <li>Debt Management</li>
-                <li>Retirement Planning</li>
-                <li>Emergency Funds</li>
-            </ul>
-        </section>
 
-        <!-- Global Market Overview -->
-        <section id="global-market-overview">
-            <h3>Global Market Overview</h3>
-            <p>Stay up-to-date on the latest trends and news in global financial markets, including stocks, bonds, commodities, and more.</p>
-            <ul>
-                <li>Global Market News</li>
-                <li>Economic Indicators</li>
-                <li>Market Commentary</li>
-                <li>Investing in International Markets</li>
-            </ul>
-        </section>
-
-        <!-- Tools and Resources -->
-        <section id="tools-and-resources">
-            <h3>Tools and Resources</h3>
-            <p>Access a variety of helpful tools and resources designed to assist you in making informed investment decisions.</p>
-            <ul>
-                <li>Stock Screener</
 
