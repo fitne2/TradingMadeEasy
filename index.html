@@ -5,6 +5,69 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GlobalFinanceHub - Empower Your Financial Future, Anywhere in the World</title>
     <script src="https://unpkg.com/lightweight-charts/dist/lightweight-charts.standalone.production.js"></script>
+    <style>
+        /* Add your custom CSS styles here */
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #4CAF50;
+            padding: 20px;
+        }
+
+        header h1, header h2 {
+            color: white;
+            margin: 0;
+        }
+
+        nav ul {
+            background-color: #333;
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            overflow: hidden;
+        }
+
+        nav ul li {
+            display: inline;
+        }
+
+        nav ul li a {
+            display: inline-block;
+            color: white;
+            padding: 10px;
+            text-decoration: none;
+        }
+
+        nav ul li a:hover {
+            background-color: #111;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        section {
+            margin-bottom: 20px;
+        }
+
+        section img {
+            width: 100%;
+            max-width: 300px;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -24,43 +87,13 @@
         </ul>
     </nav>
     <main>
-        <!-- Subscription Section -->
-        <section id="subscription">
-          <h3>Subscribe for Premium Content</h3>
-          <p>Join our premium subscription for $10/month to access exclusive content, trading strategies, and more.</p>
-          <button id="subscribe-button">Subscribe Now</button>
-        </section>
-        
+        <!-- Add the remaining sections as before -->
+
         <!-- Trading Patterns Information -->
         <section id="trading-patterns">
           <h3>Trading Patterns</h3>
           <p>Learn about popular trading patterns, such as Head and Shoulders, Double Top, and more.</p>
-          <!-- Add more detailed information, images or links to resources on trading patterns -->
-        </section>
-        
-        <!-- Candle Pattern Information -->
-        <section id="candle-patterns">
-          <h3>Candle Patterns</h3>
-          <p>Explore various candlestick patterns, like Hammer, Doji, and Engulfing patterns, to improve your trading decisions.</p>
-          <!-- Add more detailed information, images or links to resources on candle patterns -->
-        </section>
-        
-        <!-- Trading Chart -->
-        <section id="trading-chart">
-          <h3>Interactive Trading Chart</h3>
-          <div id="chart-container" style="height: 400px; width: 100%;"></div>
-          <!-- The actual trading chart will be added using JavaScript -->
-        </section>
-    </main>
-    <footer>
-        <p>&copy; 2023 GlobalFinanceHub. All rights reserved.</p>
-    </footer>
+          <!-- Add your actual image URLs here -->
+          <img src="https://via.placeholder.com/300x200.png?text=Trading+Pattern+1" alt="Trading Pattern 1">
+          <img src="https://via.placeholder
 
-    <script>
-      document.addEventListener('DOMContentLoaded', () => {
-        const chart = LightweightCharts.createChart(document.getElementById('chart-container'), { width: 600, height: 300 });
-        const candleSeries = chart.addCandlestickSeries();
-    
-        const data = [
-          { time: '2018-10-19', open: 54.62, close: 49.99, high: 56.13, low: 48.29 },
-          { time: '2018-10-22', open: 50.91, close: 51.26, high: 51.83, low:
