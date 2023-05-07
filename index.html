@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GlobalFinanceHub - Empower Your Financial Future, Anywhere in the World</title>
+    <script src="https://unpkg.com/lightweight-charts/dist/lightweight-charts.standalone.production.js"></script>
 </head>
 <body>
     <header>
@@ -23,14 +24,43 @@
         </ul>
     </nav>
     <main>
-        <section id="investing-basics">
-            <h3>Investing Basics</h3>
-            <p>Learn the fundamentals of investing, types of investments, and risk management.</p>
+        <!-- Subscription Section -->
+        <section id="subscription">
+          <h3>Subscribe for Premium Content</h3>
+          <p>Join our premium subscription for $10/month to access exclusive content, trading strategies, and more.</p>
+          <button id="subscribe-button">Subscribe Now</button>
         </section>
-        <!-- Add other sections following the same structure -->
+        
+        <!-- Trading Patterns Information -->
+        <section id="trading-patterns">
+          <h3>Trading Patterns</h3>
+          <p>Learn about popular trading patterns, such as Head and Shoulders, Double Top, and more.</p>
+          <!-- Add more detailed information, images or links to resources on trading patterns -->
+        </section>
+        
+        <!-- Candle Pattern Information -->
+        <section id="candle-patterns">
+          <h3>Candle Patterns</h3>
+          <p>Explore various candlestick patterns, like Hammer, Doji, and Engulfing patterns, to improve your trading decisions.</p>
+          <!-- Add more detailed information, images or links to resources on candle patterns -->
+        </section>
+        
+        <!-- Trading Chart -->
+        <section id="trading-chart">
+          <h3>Interactive Trading Chart</h3>
+          <div id="chart-container" style="height: 400px; width: 100%;"></div>
+          <!-- The actual trading chart will be added using JavaScript -->
+        </section>
     </main>
     <footer>
         <p>&copy; 2023 GlobalFinanceHub. All rights reserved.</p>
     </footer>
-</body>
-</html>
+
+    <script>
+      document.addEventListener('DOMContentLoaded', () => {
+        const chart = LightweightCharts.createChart(document.getElementById('chart-container'), { width: 600, height: 300 });
+        const candleSeries = chart.addCandlestickSeries();
+    
+        const data = [
+          { time: '2018-10-19', open: 54.62, close: 49.99, high: 56.13, low: 48.29 },
+          { time: '2018-10-22', open: 50.91, close: 51.26, high: 51.83, low:
